@@ -1,0 +1,174 @@
+$font: Permanent Marker, cursive;
+
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    color: gold;
+    text-align: center;
+    font-family: $font;
+    font-size: 3rem;
+}
+
+h2{
+    font-family: $font;
+    color: black;
+    
+}
+
+.col{
+    background-color: rgb(252, 252, 74);
+    text-align: center;
+}
+
+
+
+#footer{
+    background-image: linear-gradient(rgba(5, 10, 5, 0.80), rgba(82, 83, 68, 0.589)), url(../multimedia/gym.jpg);
+    
+    width: 100%;
+    font-family: $font;
+    padding-top: 30px;
+    color: white;
+
+    h3{
+        font-family: $font;
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .menu_footer{
+        align-items: center;
+        text-align:center ;
+        li {
+            position: relative;
+            display: inline-block;
+            padding: 10px;
+        }
+
+            /* extend*/
+
+           
+            li a{
+                @extend .menu_footer;
+                display: flex;
+                justify-content: center;
+                text-decoration: none;
+                color: white;
+            }
+        }
+        .sociales{  
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content:space-evenly;
+            margin: 29px;
+            }
+
+            .pie_final{
+                background-color: black;
+                width: auto;
+                text-align:left;
+                color: white;
+                font-size: 0.5rem;
+            }
+    }
+
+ 
+ .choose-better{
+     text-align: center;
+     margin: 5%;
+     font-size: 1.3rem;
+ }
+
+ .box{
+     text-align: center;
+     margin: 10%;
+ }
+
+ /*contacto*/
+
+ :root {
+    --color-dark: #fae04c;
+    --color-dark-x: #eed85b;
+    --color-dark-xx: #ffffff;
+    --color-light: #ffffff;
+    --color-grey: #f5f6f8;
+}
+
+.bg-light {
+    background-color: var(--color-light)!important;
+}
+
+.bg-dark {
+    background-color: var(--color-dark)!important;
+}
+
+.p-6 {
+    padding: 4rem 7rem;
+}
+
+.contact-box {
+    padding: 3rem;
+}
+
+.form-control {
+    border: 2px solid var(--color-dark-xx);
+    border-radius: .2rem;
+    padding: 1.5rem 1rem;
+}
+
+.register-bg {
+    background-image:linear-gradient(rgba(5, 10, 5, 0.80), rgba(82, 83, 68, 0.589)), url(../multimedia/gym.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+
+
+.testiomonial {
+    bottom: 10px;
+}
+
+@media (max-width: 575.98px) {
+    .p-6 {
+        padding: 2rem;
+    }
+
+    .contact-box {
+        padding: 0;
+    }
+
+    .width-100 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) { 
+    .register-bg {
+        min-height: 50vh;
+    }
+}
+
+.contactanos{
+    color: black;
+}
+
+.servicios{
+    text-align: center;
+    
+}
+
+.t_clases{
+    text-align: center;
+}
+
+.container{
+    background-color: #eed85b;
+}
