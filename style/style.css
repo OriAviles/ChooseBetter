@@ -1,7 +1,284 @@
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0%;
-  padding: 0%;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color: gold;
+  text-align: center;
+  font-family: Permanent Marker, cursive;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: Permanent Marker, cursive;
+  color: black;
+}
+
+.col {
+  background-color: #fcfc4a;
+  text-align: center;
+}
+
+#footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 10, 5, 0.8)), to(rgba(82, 83, 68, 0.589))), url(../multimedia/gym.jpg);
+  background-image: linear-gradient(rgba(5, 10, 5, 0.8), rgba(82, 83, 68, 0.589)), url(../multimedia/gym.jpg);
+  width: 100%;
+  font-family: Permanent Marker, cursive;
+  padding-top: 30px;
+  color: white;
+}
+
+#footer h3 {
+  font-family: Permanent Marker, cursive;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+#footer .menu_footer, #footer .menu_footer li a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  /* extend*/
+}
+
+#footer .menu_footer li, #footer .menu_footer li a li {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+#footer .menu_footer li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: white;
+}
+
+#footer .sociales {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 29px;
+}
+
+#footer .pie_final {
+  background-color: black;
+  width: auto;
+  text-align: left;
+  color: white;
+  font-size: 0.5rem;
+}
+
+.choose-better {
+  text-align: center;
+  margin: 5%;
+  font-size: 1.3rem;
+}
+
+.box {
+  text-align: center;
+  margin: 10%;
+}
+
+/*contacto*/
+:root {
+  --color-dark: rgba(252, 252, 162, 0.671);
+  --color-dark-x: #eed85b;
+  --color-dark-xx: #ffffff;
+  --color-light: #ffffff;
+  --color-grey: #f5f6f8;
+}
+
+.bg-light {
+  background-color: var(--color-light) !important;
+}
+
+.bg-dark {
+  background-color: var(--color-dark) !important;
+}
+
+.p-6 {
+  padding: 4rem 7rem;
+}
+
+.contact-box {
+  padding: 3rem;
+}
+
+.form-control {
+  border: 2px solid var(--color-dark-xx);
+  border-radius: .2rem;
+  padding: 1.5rem 1rem;
+}
+
+.register-bg {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 10, 5, 0.8)), to(rgba(82, 83, 68, 0.589))), url(../multimedia/gym.jpg);
+  background-image: linear-gradient(rgba(5, 10, 5, 0.8), rgba(82, 83, 68, 0.589)), url(../multimedia/gym.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.testiomonial {
+  bottom: 10px;
+}
+
+@media (max-width: 575.98px) {
+  .p-6 {
+    padding: 2rem;
+  }
+  .contact-box {
+    padding: 0;
+  }
+  .width-100 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .register-bg {
+    min-height: 50vh;
+  }
+}
+
+.contactanos {
+  color: black;
+}
+
+.servicios {
+  text-align: center;
+}
+
+.t_clases {
+  text-align: center;
+}
+
+.container {
+  background-color: --color-dark;
+}
+
+/*servicio*/
+.container_card {
+  max-width: 1200px;
+  padding: 20px;
+  padding-bottom: 40px;
+  margin: auto;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  width: 400px;
+  position: relative;
+  margin: 20px;
+  font-family: cursive;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.card:hover {
+  -webkit-box-shadow: 1px 1px 20px -10px #20202049;
+          box-shadow: 1px 1px 20px -10px #20202049;
+}
+
+.card:hover .description {
+  margin-top: 0;
+}
+
+.img {
+  width: 100%;
+  height: 220px;
+  background-color: var(--color-dark-x);
+  position: relative;
+  z-index: 1;
+}
+
+.img img {
+  width: 100%;
+  height: 220px;
+  border-radius: 20px;
+}
+
+.description {
+  width: 100%;
+  height: 220px;
+  background-color: var(--color-dark-x);
+  text-align: center;
+  padding: 20px;
+  margin-top: -220px;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.description p {
+  font-size: 16px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+}
+
+.horario {
+  padding: 30px;
+}
+
+.table {
+  background-color: rgba(252, 252, 162, 0.671);
+}
+
+/*clases*/
+.clases {
+  padding: 30px;
+  text-align: center;
+}
+
+.clasesc {
+  width: 100%;
+  background-color: #eed85b;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.clasesc .img_clases {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+  .clasesc {
+    display: -ms-grid;
+    display: grid;
+  }
 }
 /*# sourceMappingURL=style.css.map */
